@@ -9,6 +9,12 @@
         <h1>Flight Simulator</h1>
         <p id="statusReport">The shuttle is on the ground</p>
         <button id = "liftoffButton">Take off</button>
+        button.addEventListener('click', event => {
+   paragraph.innerHTML = 'Houston! We have liftoff!';
+});
         <button id = "abortMission">Abort mission</button>
+        missionAbort.addEventListener("mouseout", function( event ) {
+   event.target.style.backgroundColor = "";
+});
     </body>
 </html>
